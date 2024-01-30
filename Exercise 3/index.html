@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://bri.co.id/o/bri-corporate-theme/images/favicon.ico" rel="icon">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Form Exercise</title>
+  </head>
+  <body style="background-color: #dadada;">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-2">
+      <div class="container">
+        <a class="navbar-brand" href="#">Gogogo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Inventory</a>
+            </li>
+          </ul>
+          <a href="login.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container mb-3 mt-3">
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body ">
+                  <div class="row">
+                    <div class="col-4">
+                      <img src="https://images.pexels.com/photos/1715092/pexels-photo-1715092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="mx-auto d-block rounded-circle img-fluid" alt="Profile Picture">
+                    </div>
+                    <div class="col-8">
+                      <h5 class="card-title" id="text_name">Teguh Agung Prabowo</h5>
+                      <p class="card-text" id="text_role">Software Engineer</p>
+                      <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#formCollapse" aria-expanded="false" aria-controls="formCollapse" type="button">Edit</button>
+                      <button class="btn btn-outline-success" data-bs-toggle="collapse" data-bs-target="#formCalc" aria-expanded="false" aria-controls="formCalc" type="button">Calc</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-2">
+                      <div class="card-text"><strong>Availability:</strong></div>
+                      <div class="card-text"><strong>Usia:</strong></div>
+                      <div class="card-text"><strong>Lokasi:</strong></div>
+                      <div class="card-text"><strong>Pengalaman:</strong></div>
+                      <div class="card-text"><strong>Email:</strong></div>
+                    </div>
+                    <div class="col-6">
+                      <div class="card-text" id="text_available">Fulltime</div>
+                      <div class="card-text" id="text_age">17</div>
+                      <div class="card-text" id="text_place">Jakarta, Indonesia</div>
+                      <div class="card-text" id="text_exp">2</div>
+                      <div class="card-text" id="text_email">developer@gmail.com</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="formCalc" class="collapse">
+      <div class="container mb-3" >
+        <div class="card" >
+          <div class="card-body">
+            <form action="" id="formCalc" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="num1" class="form-label">Angka 1</label>
+                <input required type="number" class="form-control" id="num1" placeholder="Angka 1">
+              </div>
+  
+              <div class="mb-3">
+                <label for="num2" class="form-label">Angka 2</label>
+                <input required type="number" class="form-control" id="num2" placeholder="Angka 2">
+              </div>
+
+              <div class="mb-3">
+                <div class="d-grid gap-2">
+                  <button class="btn btn-success" id="btn_hitung" type="button">Hitung</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="formCollapse" class="collapse">
+      <div class="container mb-3" >
+        <div class="card" >
+          <div class="card-body">
+            <form action="" id="formDataPortofolio" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input required type="text" class="form-control" id="name" placeholder="Nama">
+              </div>
+  
+              <div class="mb-3">
+                <label for="role" class="form-label">Role</label>
+                <input required type="text" class="form-control" id="role" placeholder="Role">
+              </div>
+  
+              <div class="mb-3">
+                <label for="available" class="form-label">Availability</label>
+                <input required type="text" class="form-control" id="available" placeholder="Availability">
+              </div>
+  
+              <div class="mb-3">
+                <label for="age" class="form-label">Age</label>
+                <input required type="text" class="form-control" id="age" placeholder="Age">
+              </div>
+  
+              <div class="mb-3">
+                <label for="place" class="form-label">Lokasi</label>
+                <input required type="text" class="form-control" id="place" placeholder="Lokasi">
+              </div>
+  
+              <div class="mb-3">
+                <label for="exp" class="form-label">Years Experience</label>
+                <input required type="text" class="form-control" id="exp" placeholder="Years Experience">
+              </div>
+  
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input required type="email" class="form-control" id="email" placeholder="name@example.com">
+              </div>
+  
+              <div class="mb-3">
+                <div class="d-grid gap-2">
+                  <button class="btn btn-success" id="btn_submit" type="submit">SUBMIT</button>
+                </div>
+              </div>
+  
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      
+    </script>
+    <script src="script.js"></script>
+    <script src="challange.js"></script>
+  </body>
+</html>
+
+
