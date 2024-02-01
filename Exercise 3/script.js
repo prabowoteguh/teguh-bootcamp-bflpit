@@ -3,7 +3,7 @@ const retriveItem = (data) => {
   document.getElementById("text_role").innerHTML      = data.role
   document.getElementById("text_available").innerHTML = data.available
   document.getElementById("text_age").innerHTML       = data.age
-  document.getElementById("text_place").innerHTML    = data.place
+  document.getElementById("text_place").innerHTML     = data.place
   document.getElementById("text_exp").innerHTML       = data.exp
   document.getElementById("text_email").innerHTML     = data.email
 }
@@ -47,6 +47,16 @@ const btnHitung  = document.getElementById("btn_hitung");
     setItem();
     const userData = JSON.parse(localStorage.getItem("user_data"));
     retriveItem(userData);
+    
+    Swal.fire({
+      title: "Success",
+      text: "Profile successfully updated!",
+      icon: "success",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.reload()
+      }
+    })
 
     form.data('bootstrapValidator').resetForm();
     
